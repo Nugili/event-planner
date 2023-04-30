@@ -1,0 +1,62 @@
+html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-планировщик мероприятий</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Онлайн-планировщик мероприятий</h1>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#">Создать мероприятие</a>
+            <a href="#">Мои мероприятия</a>
+            <a href="#">Войти</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Популярные мероприятия</h2>
+            <!-- Здесь будет список популярных мероприятий -->
+        </section>
+
+        <section>
+            <h2>Поиск мероприятий</h2>
+            <form>
+                <label for="search">Поиск:</label>
+                <input type="text" id="search" placeholder="Введите название мероприятия">
+                <button type="submit">Найти</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Создать новое мероприятие</h2>
+            <form>
+                <label for="event_name">Название мероприятия:</label>
+                <input type="text" id="event_name" required>
+
+                <label for="event_date">Дата и время:</label>
+                <input type="datetime-local" id="event_date" required>
+
+                <label for="event_location">Место проведения:</label>
+                <input type="text" id="event_location" required>
+
+                <label for="event_description">Описание мероприятия:</label>
+                <textarea id="event_description" rows="4" cols="50" required></textarea>
+
+                <button type="submit">Создать мероприятие</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Онлайн-планировщик мероприятий &copy; 2023. Все права защищены.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
